@@ -18,7 +18,7 @@ function App() {
       <Sidebar />
       <Wrapper>
         <Routes>
-          <Route path='/' element={<Calculator />} />
+          <Route path='calculator' element={<Calculator />} />
           <Route path='currency' element={<CurrencyConverter />} />
           <Route path='bmi' element={<BmiCalculator />} />
           <Route path="contact" element={<Contact />} />

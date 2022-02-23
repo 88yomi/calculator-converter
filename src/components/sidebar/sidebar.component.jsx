@@ -19,7 +19,7 @@ const Sidebar = () => {
 			<nav className={`sidebar ${show ? 'hide' : ""}`}>
 					<ul>
 						<li>
-							<Link to="/">Simple Calculator</Link>
+							<Link to="calculator">Simple Calculator</Link>
 						</li>
 						<li>
 							<Link to="currency">Currency Converter</Link>

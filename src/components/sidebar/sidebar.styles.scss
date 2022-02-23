@@ -55,7 +55,10 @@ $reddish: #c6361c;
     padding: 10px 0;
     width: 100%;
   }
-  
+
   & ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: $light;
   }
 }
