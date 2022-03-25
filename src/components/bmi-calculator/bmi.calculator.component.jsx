@@ -32,9 +32,8 @@ const BmiCalculator = () => {
 				<BmiInput measure="height" unit={metres} handleChange={handleChange} />
 			</form>
 			<section>
-				<article
-				>
-					{//render the number, for now
+				<article>
+					{
 						bmi !== Infinity && !isNaN(bmi) ? bmi : ""
 					}
 				</article>

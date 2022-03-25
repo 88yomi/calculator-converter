@@ -19,7 +19,10 @@ export const About = () => (
 
 export const Contact = () => (
 	<section>
-		email: yomibalo20@gmail.com
+		<h4>email:</h4>
+		<p>
+			yomibalo20@gmail.com
+		</p>
 		github: 88yomi
 		twitter: ??
 		linkedIn: ??

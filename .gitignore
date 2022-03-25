@@ -28,3 +28,7 @@ yarn-error.log*
 # body mass index reference image
 /src/components/bmi-calculator/bmi.jpeg
 /src/components/bmi-calculator/pls.delete.jsx
+
+#
+palette1.png
+palette2.jpg

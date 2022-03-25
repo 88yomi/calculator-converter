@@ -6,4 +6,11 @@
   background-color: #485461;
   background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
   margin: auto;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    margin-top: 4rem;
+  }
 }

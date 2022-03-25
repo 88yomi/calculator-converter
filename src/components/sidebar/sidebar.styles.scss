@@ -9,31 +9,54 @@ $reddish: #c6361c;
 
   button {
     position: absolute;
-    left: 2rem;
+    left: 3rem;
+    display: inline-block;
     // because the header is 3rem high
     top: calc(1rem + 3rem);
     z-index: 100;
-    margin: 0;
-    width: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+
+    & > div.line {
+      height: 0.2rem;
+      width: 1.7rem;
+      width: 30px;
+      height: 4px;
+      background-color: black;
+      margin: 6px 0;
+      transition: transform 0.5s, -webkit-transform 0.5s;
+
+      &.off.bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+      &.off.bar2 {
+        opacity: 0;
+      }
+
+      &.off.bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
   }
 }
 
-.sidebar {
+#sidebar {
   position: fixed;
   overflow: hidden;
   height: 100%;
   background-color: $dark;
   color: $light;
-
   transform: translate(0);
-  transition: transform 1s;
-
-  // width: 12rem;
-  width: auto;
+  width: 10rem;
   padding: 1rem;
+  transition: transform 0.5s;
 
   &.hide {
-    display: inherit;
     transform: translate(-100%);
   }
 
@@ -61,4 +84,11 @@ $reddish: #c6361c;
     text-decoration: none;
     color: $light;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .navigation button {
+    left: 2rem;
+  }
+
 }
